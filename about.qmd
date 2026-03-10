@@ -33,4 +33,4 @@ R, Quarto, Git, Python, SAP, MS Office Programs, AutoCAD
 
 Reading Books, Swimming, Hanging Out With Friends, Watching Movies
 
-[If you want further information about me, you can check my CV here \<3.](cv.pdf)
+If you want further information about me, you can [check my CV here](CV.pdf) \<3.

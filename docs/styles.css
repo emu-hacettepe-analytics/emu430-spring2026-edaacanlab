@@ -35,3 +35,15 @@ body {
 .sidebar nav[role="doc-toc"] ul li a:hover {
   color: #f06292 !important;
 }
+
+
+a {
+  color: #f06292 !important; 
+  text-decoration: none; 
+}
+
+
+a:hover {
+  color: #d81b60 !important;
+  text-decoration: underline; 
+}
