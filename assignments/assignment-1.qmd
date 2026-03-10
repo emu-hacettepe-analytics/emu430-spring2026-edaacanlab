@@ -8,11 +8,11 @@ My first assignment has three parts.
 
 For the first part of my homework, I watched Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir.
 
-In this seminar, Baykal Hafızoğlu discussed the real-world applications of Operations Research (OR) and Analytics from an Industrial Engineering perspective. He explained that general analytics is a journey starting from Descriptive Analytics to Prescriptive Analytics, where complexity increases with the added value. He provides clear industry examples to illustrate this transition: for instance, moving from tracking daily inventory levels (Descriptive) to demand forecasting (Predictive) and finally to safety stock optimization (Prescriptive). Similarly, he gave an example from the financial sector, he explained how a mortgage application process is evolving from estimating an applicant's loan score to make the final mortgage decision using analytical models.
+In this seminar, Baykal Hafızoğlu discussed the real-world applications of Operations Research (OR) and Analytics from an Industrial Engineering perspective. He explained that general analytics is a journey starting from Descriptive Analytics to Prescriptive Analytics, where complexity increases with the added value. He provided clear industry examples to illustrate this transition: for instance, moving from tracking daily inventory levels (Descriptive) to demand forecasting (Predictive) and finally to safety stock optimization (Prescriptive). Similarly, he gave an example from the financial sector, he explained how a mortgage application process is evolving from estimating an applicant's loan score to make the final mortgage decision using these analytical models.
 
-He told that when you are starting a project, the first and mod important thing you must do is making a clear problem definition and specify all of your criterias and KPI's. And also after defining, you must also deploy the model.
+He told that when starting a project, the first and most important thing you must do is to make a clear problem definition and specify all of your criterias and KPI's. And also after defining, you must also deploy the model.
 
-Another point he made is that while complex models are exciting, nearly 99% of a project’s success depends on understanding the "End User" and KPI's. He has also introduced the concept of "Explainability," and why sometimes a simple solution is more valuable than a "black-box" complex heuristic.
+Another point he made is that while complex models are exciting, nearly 99% of a project’s success depends on understanding the end user and their KPI's. He has also introduced the concept of explainability and why sometimes a simple solution is more valuable than a "black-box" complex heuristic.
 
 ## (b)
 
@@ -20,7 +20,7 @@ Another point he made is that while complex models are exciting, nearly 99% of a
 
 **Question:** Based on Baykal Hafızoğlu’s examples, how does the application of analytics change when moving from Predictive to Prescriptive levels in the mortgage/loan industry?
 
-**Answer:** In the Predictive stage, analytics is used to estimate an applicant's loan score based on their history. In the Prescriptive stage, the model goes further to provide a specific mortgage decision (approval/rejection or the specific interest rates), directly optimizing the outcome based on these predictions.
+**Answer:** In the Predictive stage, analytics is used to estimate an applicant's loan score based on their history. In the Prescriptive stage, the model helps us to provide a specific mortgage decision (approval/rejection or the specific interest rates), optimizing the outcome based on these predictions.
 
 **2. Multiple-Choice Question:** 
 
