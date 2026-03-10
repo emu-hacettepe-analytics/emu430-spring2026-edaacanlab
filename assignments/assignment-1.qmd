@@ -2,6 +2,8 @@
 title: "Assignment 1"
 ---
 
+![]()
+
 # Assignment 1
 
 ```{r}
@@ -10,6 +12,120 @@ title: "Assignment 1"
 
 My first assignment has two parts.
 
-## (a)
+## (a) 
+
+For the first part of my homework, I watched Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir.
+
+In this seminar, Baykal Hafızoğlu discussed the real-world applications of Operations Research (OR) and Analytics from an Industrial Engineering perspective. He explained that general analytics is a journey starting from Descriptive Analytics to Prescriptive Analytics, where complexity increases with the added value. He provides clear industry examples to illustrate this transition: for instance, moving from tracking daily inventory levels (Descriptive) to demand forecasting (Predictive) and finally to safety stock optimization (Prescriptive). Similarly, he gave an example from the financial sector, he explained how a mortgage application process is evolving from estimating an applicant's loan score to make the final mortgage decision using analytical models.
+
+He told that when you are starting a project, the first and mod important thing you must do is making a clear problem definition and specify all of your criterias and KPI's. And also after defining, you must also deploy the model.
+
+Another point he made is that while complex models are exciting, nearly 99% of a project’s success depends on understanding the "End User" and KPI's. He has also introduced the concept of "Explainability," and why sometimes a simple solution is more valuable than a "black-box" complex heuristic.
 
 ## (b)
+
+**1. Open-Ended Question:**
+
+**Question:** Based on Baykal Hafızoğlu’s examples, how does the application of analytics change when moving from Predictive to Prescriptive levels in the mortgage industry?
+
+**Answer:** In the Predictive stage, analytics is used to estimate an applicant's loan score based on their history. In the Prescriptive stage, the model goes further to provide a specific mortgage decision (approval/rejection or the specific interest rates), directly optimizing the outcome based on these predictions.
+
+**2. Multiple-Choice Question:** 
+
+**Question:** Which of the following is an example of "Prescriptive Analytics" mentioned in the presentation regarding supply chain management?
+
+a\) Tracking daily inventory levels
+
+b\) Predicting future customer demand
+
+c\) Safety stock optimization
+
+d\) Describing past sales trends
+
+**Answer:** c) Safety stock optimization
+
+## (c)
+
+```{r}
+
+library(dslabs)
+data("polls_us_election_2016")
+
+```
+
+```{r}
+my_first <- "Eda"
+my_birth_year <- 2002
+```
+
+Defining integer k:
+
+```{r}
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+```
+
+```{r}
+if (k %% 2 == 0) {
+  print(head(polls_us_election_2016, k))
+} else {
+  print(tail(polls_us_election_2016, k))
+}
+```
+
+```{r}
+total_na <- sum(is.na(polls_us_election_2016))
+cat("Total number of NAs:", total_na, "\n\n")
+```
+
+```{r}
+na_per_col <- colSums(is.na(polls_us_election_2016))
+print("number of NA values per column, sorted from largest to smallest:")
+head(sort(na_per_col, decreasing = TRUE), 8)
+```
+
+```{r}
+new_data <- polls_us_election_2016
+```
+
+New object:
+
+```{r}
+new_data <- polls_us_election_2016
+
+for(col in names(new_data)){
+  if(is.numeric(new_data[[col]])){
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+    
+  } else if(is.character(new_data[[col]]) | is.factor(new_data[[col]])){
+    
+    if(is.factor(new_data[[col]])){
+      new_data[[col]] <- as.character(new_data[[col]])
+    }
+    
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "", k)
+  }
+}
+```
+
+```{r}
+cat("\nNew dataset with k rows:\n")
+if (k %% 2 == 0) {
+  print(head(new_data, k))
+} else {
+  print(tail(new_data, k))
+}
+```
+
+```{r}
+left_na <- sum(is.na(new_data))
+cat("\nTotal number of NAs in new dataset:", left_na, "\n")
+```
+
+```{r}
+cat("Are there any NAs left? ")
+anyNA(new_data)
+```
+
+I briefly took help from AI while writing the R code for defining the new object.
+
+**Prompt Used:** *"How can I replace NA values in an R data frame using a loop where numeric columns get 'year+k' and factor columns get 'name+k' without getting invalid factor level errors?"*

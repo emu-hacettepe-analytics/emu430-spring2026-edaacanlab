@@ -5,26 +5,32 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2022 - ongoing.
 
 # Work Experience
 
 ## Employements
 
-1.  Firm xxx, position xx, year xxx
+1.  Firm Aselsan, position Product Planner, year 2025-2026
 
-2.  Firm yyy, position yyy, year yyy
+2.  Firm TAI, position Product Planner, year 2024-2025
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  Firm Roketsan, position Project Management Intern, year 2025
 
-2.  Firm bbb, position yyy, year yyy
+2.  Firm HIDROMEK, position Data Logistics Intern, year 2024
 
 # Projects
 
+Graduation Project with Roketsan: Leadership Developement Robot with AI support
+
 # Competencies
 
-R, Quarto, Git, Python
+R, Quarto, Git, Python, SAP, MS Office Programs, AutoCAD
 
 # Hobbies
+
+Reading Books, Swimming, Hanging Out With Friends, Watching Movies
+
+[If you want further information about me, you can check my CV here \<3.](cv.pdf)
