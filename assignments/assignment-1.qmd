@@ -18,13 +18,13 @@ Another point he made is that while complex models are exciting, nearly 99% of a
 
 **1. Open-Ended Question:**
 
-**Question:** Based on Baykal Hafızoğlu’s examples, how does the application of analytics change when moving from Predictive to Prescriptive levels in the mortgage industry?
+**Question:** Based on Baykal Hafızoğlu’s examples, how does the application of analytics change when moving from Predictive to Prescriptive levels in the mortgage/loan industry?
 
 **Answer:** In the Predictive stage, analytics is used to estimate an applicant's loan score based on their history. In the Prescriptive stage, the model goes further to provide a specific mortgage decision (approval/rejection or the specific interest rates), directly optimizing the outcome based on these predictions.
 
 **2. Multiple-Choice Question:** 
 
-**Question:** Which of the following is an example of "Prescriptive Analytics" mentioned in the presentation regarding supply chain management?
+**Question:** Which of the following is an example of Prescriptive Analytics regarding to the supply chain management?
 
 a\) Tracking daily inventory levels
 
